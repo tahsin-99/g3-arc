@@ -109,6 +109,49 @@ main > section{
 .quick{
     font-weight: 500;
 }
+/* features */
+.features{
+    gap: 140px;
+}
+
+#features-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-card{
+     padding: 30px;
+     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+     margin-bottom: 20px;
+     border-radius: 8px;
+    
+
+}
+.feature-title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.feature-card{
+     font-weight: 600;
+     font-size: 1.25rem;
+    
+}
+#badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -120px;
+   
+}
+
+
+#year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.featured-architected img{
+    width: 100%;
+}
 /* fact/ */
 .fact{
     border: 1px solid #FF900E;
@@ -153,16 +196,36 @@ main > section{
  .sponsor-companies img{
     filter:grayscale(100%) ;
  }
+
+
+ footer{
+    width:1440px;
+    height: 100px;
+    border-radius: 8px;
+    margin: 130px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      
+ }
+ .footer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+ }
+ 
  /* responsive   */
  @media screen and (max-width:576px){
-    .navbar,.nav-links,.teams{
+    .navbar,.nav-links,.teams,.features{
         flex-direction: column;
         gap: 10px;
         text-align: center;
     }
     .nav-links a{
         font-weight: 600;
-       font-size: larger;
+       font-size:x-large;
     }
     .team-img-container,.facts-container,.sponsor-companies{
         grid-template-columns: repeat(1,1fr);
@@ -178,12 +241,21 @@ main > section{
         justify-items: center;
         gap:50px ;
     }
+    #badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    footer{
+        width: 100%;
+        
+    }
+
  }
  
 
  /* medium */
  @media screen and (min-width:576px) and (max-width:992px) {
-    .teams{
+    .teams,.features{
         flex-direction: column;
     }
     .our-features{
@@ -193,6 +265,13 @@ main > section{
         grid-template-columns: repeat(2,1fr);
         gap: 50px;
         justify-items: center;
+    }
+    #badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    footer{
+        width: 100%;
     }
  }
     
